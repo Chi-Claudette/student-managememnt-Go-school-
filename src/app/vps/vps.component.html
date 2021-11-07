@@ -1,0 +1,39 @@
+<div class="container">
+  <div *ngIf="studentData.length >= 1 && !isLoading " class="table-responsive">
+    <table border="2px" class="table" >
+      <tr>
+        <th>Names</th>
+        <th >Email</th>
+        <th>Gender</th>
+        <th>CV</th>
+        <th>Institute</th>
+        <th>Faculty</th>
+        <th >Level</th>
+        <th >Action</th>
+      </tr>
+
+      <tr *ngFor="let studentD of studentData">
+        <td>{{studentD.name}}</td>
+        <td>{{studentD.email}}</td>
+        <td>{{studentD.gender}}</td>
+        <td>{{studentD.cv}}</td>
+        <td>{{studentD.inst}}</td>
+        <td>{{studentD.dept}}</td>
+        <td>{{studentD.level}}</td>
+        <td>
+          <div class="but">
+            <button type="button" class="btn btn-success" (click)="onAccept(studentD)">Accept</button>&nbsp; &nbsp;&nbsp;
+            <button type="button" class="btn btn-danger"  (click)="onDecline(studentD)">Decline</button>
+          </div>
+
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <h3 *ngIf="studentData.length < 1 && !isLoading">No student available</h3>
+  <p *ngIf="isLoading">Loading...</p>
+
+</div>
+
+

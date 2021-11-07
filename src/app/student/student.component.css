@@ -1,0 +1,31 @@
+.container
+{
+  margin-top: 60px;
+  box-shadow: 2px 3px 5px gray;
+}
+button
+{
+  margin-left: 500px;
+  width: 150px;
+  height: 40px;
+  background-color: #967BB6;
+}
+.h3
+{
+  text-align: center;
+  height: 60px;
+  background-color: #967BB6;
+}
+h3
+{
+  padding-top: 8px;
+  color: white;
+}
+input.ng-invalid.ng-touched
+{
+  border: 2px solid red;
+}
+.stud
+{
+  margin-left: 10px;
+}

@@ -1,0 +1,77 @@
+<app-header></app-header>
+<div class="container main">
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <a routerLink="/vps">
+        <h3>View all pending students</h3>
+        <img src="assets/ps.png" width="50px" height="50px">
+      </a>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <a routerLink="/ves">
+        <h3>View all enrolled students</h3>
+        <img src="assets/student.png" width="50px" height="50px">
+      </a>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <a routerLink="/mes">
+        <h3>Manage enrolled students</h3>
+        <img src="assets/students.png" width="50px" height="50px">
+      </a>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+
+    <div class="col-md-4 col-sm-6">
+      <a>
+        <h3>Upload courses</h3>
+        <img src="assets/upload.png" width="50px" height="50px">
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a>
+        <h3>View resources for frontend</h3>
+        <img src="assets/file.gif" width="50px" height="50px">
+      </a>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <a >
+        <h3>View resources for backend</h3>
+        <img src="assets/file1.png" width="50px" height="50px">
+      </a>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="row ">
+    <div class="col-md-4 col-sm-6 sub ">
+      <div>
+        <h5>Total number of active frontend students</h5>
+        <p>15</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 sub">
+      <div>
+        <h5>Total  number of active backend students</h5>
+        <p>15</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 sub">
+      <div>
+        <h5>Date and time</h5>
+        <p id="para">{{date | date: 'short'}}</p>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+

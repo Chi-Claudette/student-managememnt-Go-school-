@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default navbar-fixed-top bg">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <span class="navbar-brand" style=" color: lightgreen; margin-top: 10px">Go School</span>
+    </div>
+
+    <img src="assets/logo.png" height="90px" width="90px">
+
+    <ul class="nav navbar-nav navbar-right">
+      <li style="margin-top: 10px;font-size: 18px"><a href="#stud" style=" color: white;">Register</a></li>
+      <li style="margin-top: 10px;font-size: 18px"><a href="#ad" style=" color: white;">Login</a></li>
+      <li style="margin-top: 10px; font-size: 18px"> <a  style="color:lightgreen;margin-right: 20px" class="log">About</a></li>
+
+    </ul>
+  </div>
+
+</nav>
+
+<div class="main"  [ngStyle]="{backgroundImage:'url(assets/school.jpg)'}">
+    <div class="jumbotron">
+      <span>Welcome to</span>
+      <h1>Go School</h1>
+      <p>A place to grow from zero to hero!</p>
+      <br>
+      <h4>Register as a student to enroll in Go School,<strong> OR</strong> login as admin to manage students</h4>
+    </div>
+
+</div>
+<br>
+<br>
+
+<div style="text-align: center">
+  <a name="stud"><button routerLink="/student" class=" btn btn-primary btn-lg but">Register as student</button></a>
+  <br>
+  <br>
+  <span>OR</span>
+  <br>
+  <br>
+  <a name="ad"><button class="btn btn-success btn-lg but" routerLink="/admin">Login as admin</button></a>
+    <br>
+    <br>
+</div>
+
+
+

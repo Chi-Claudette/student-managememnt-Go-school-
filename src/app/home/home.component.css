@@ -1,0 +1,33 @@
+.bg
+{
+  background-color: #967BB6;
+  height: 70px;
+}
+.main {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-position: center ;
+  height: 620px;
+}
+.jumbotron {
+  background-color: rgba(2, 10, 30, 0.5);
+  margin-top: 150px;
+  margin-left: 23%;
+  text-align: center;
+  color: white;
+  width: 50%;
+}
+h1
+{
+  color:  #967BB6;
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+}
+
+.but
+{
+  width:300px;
+  box-shadow: 1px 2px 1px gray;
+}

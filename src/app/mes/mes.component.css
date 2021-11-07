@@ -1,0 +1,37 @@
+.bg
+{
+  background-color: #967BB6;
+  height: 70px;
+
+}
+.stud
+{
+  margin-right: 50px;
+}
+
+.log{
+  margin-right: 100px;
+  font-size: 17px;
+  color: deepskyblue;
+  font-weight: bolder;
+}
+ul li
+{
+  margin-top: 13px;
+}
+table th{
+  background-color: #967BB6;
+  height: 40px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+}
+table td
+{
+  text-align: center;
+  padding: 8px;
+}
+.but{
+  display: inline-flex;
+}

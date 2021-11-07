@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="h3"><h3>Admin Login <img src="assets/admin.png" width="40px"  height="40px" class="im"></h3> </div>
+  <form [formGroup]="adminL" (ngSubmit)="onSubmit()">
+    <br>
+    <div  class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+      <span class="help-block"
+            *ngIf="f.name.invalid && f.name.touched">Name is required</span>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" class="form-control" id="pass" formControlName="pass">
+      <span class="help-block"
+            *ngIf="f.pass.invalid && f.pass.touched">Password is required</span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="adminL.invalid">Login</button>
+    <br>
+    <br>
+    <br>
+
+  </form>
+</div>
