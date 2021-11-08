@@ -41,7 +41,7 @@ export class StudentComponent implements OnInit {
     return this.studentR.controls;
   }
 
-  onSubmit( studInfo: Stud)
+  onSubmit(studInfo: Stud)
   {
     this.requests.createPost(studInfo)
       .subscribe(response =>

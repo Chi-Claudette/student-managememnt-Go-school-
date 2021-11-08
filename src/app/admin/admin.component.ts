@@ -30,8 +30,10 @@ export class AdminComponent implements OnInit {
   {
     if (this.f.name.value === this.Aname && this.f.pass.value === this.Apass)
     {
-      this.router.navigate(['/']);
+      localStorage.setItem('name', this.f.name.value);
+      this.router.navigate(['/db']);
     }
+
     else{
       alert('Your credentials are invalid!. Try again');
       this.adminL.reset();

@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Stud} from "./stud";
 import {map} from "rxjs/operators";
+import {Router} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
 })
 export class RequestsService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private router: Router) { }
 
   createPost(studentI: Stud)
   {
@@ -71,5 +72,16 @@ export class RequestsService {
   deleteS(studid:string){
     return this.http.delete('https://studentreg-c257f-default-rtdb.firebaseio.com/enrolledStudent.json'+'/'+studid);
   }
+
+  isLoggedIn()
+  {
+    return !!localStorage.getItem('name');
+  }
+  logout()
+  {
+    localStorage.removeItem('name');
+    this.router.navigate(['/']);
+  }
+
 
 }
